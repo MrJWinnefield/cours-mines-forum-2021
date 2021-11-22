@@ -22,3 +22,44 @@ a.special {
 
   display: block; /*hidden, inline, ...*/
 }
+
+form div > label.label3 {
+  color: rgb(56, 138, 138);
+}
+
+input[type="text"].input3 {
+  font-size: 25px;
+}
+
+div#mail-row {
+  position: absolute;
+  top: 300px;
+  left: 1200px;
+  color: red;
+  font-size: 10px;
+}
+
+div.form-group > div {
+  margin-top: 10px;
+}
+
+div.form-group div > label.form-check-label {
+  margin-right: 10px;
+}
+
+#forum-wrapper {
+  height: 100vh;
+}
+
+#messages-container {
+  background-color: red;
+}
+
+#new-message-container {
+  height: 150px;
+  background-color: blue;
+}
+
+input#message {
+  height: 200%;
+}
