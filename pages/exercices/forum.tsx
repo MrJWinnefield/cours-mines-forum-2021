@@ -1,30 +1,35 @@
 import type { NextPage } from 'next'
+import MessagesList from '../../components/MessagesList'
+import Form from '../../components/Form'
+import Navbar from '../../components/Navbar'
 
-const Exercise4: NextPage = () => {
+const Forum: NextPage = () => {
   return (
-    <div id="forum-wrapper" className="d-flex flex-column">
-      <div id="messages-container" className="flex-grow-1">
-
+    <div id="window" className="d-flex flex-row">
+      <div id="navbar-wrapper">
+        <Navbar />
       </div>
-      <div id="new-message-container">
-        <form method="post">
-          <div className="form-group">
-            <div className="row">
-              <div className="col-sm-6">
-                <div>
-                  <input className="form-control" type="text" id="message" name="message" placeholder="entrez votre message"/>
-                </div>
-              </div>
-              <div className="col-sm-6">
-                  <input className="form-control" type="text" id="pseudo" name="pseudo" placeholder="votre pseudo"/>
-                  <button className="btn btn-primary" type="submit">Envoyer</button>
-              </div>
+
+      <div id="forum-wrapper" className="d-flex flex-column">
+        <div className="row">
+
+          <div id="messages-container" className="flex-grow-1">
+            <div className="container">
+              <MessagesList />
             </div>
           </div>
-        </form>
+
+          <div id="new-message-container">
+            <div className="container py-3">
+              <Form />
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
   )
 }
 
-export default Exercise4
+export default Forum
