@@ -10,8 +10,7 @@ const Forum: NextPage = () => {
         <Navbar />
       </div>
 
-      <div id="forum-wrapper" className="d-flex flex-column">
-        <div className="row">
+      <div id="forum-wrapper" className="d-flex flex-column flex-grow-1">
 
           <div id="messages-container" className="flex-grow-1">
             <div className="container">
@@ -24,7 +23,6 @@ const Forum: NextPage = () => {
               <Form />
             </div>
           </div>
-        </div>
 
       </div>
 
